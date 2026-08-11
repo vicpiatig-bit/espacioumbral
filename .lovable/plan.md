@@ -9,7 +9,7 @@ La captura aporta el ritmo: hero fotográfico de ancho completo con titular seri
 - Una sola escala tipográfica editorial (serif para titulares, sans discreta para todo lo funcional), sin cajas ni cards decorativas.
 - Composición asimétrica real: las imágenes rompen el margen (bleed) en lugar de quedar centradas dentro de un contenedor.
 - Menos elementos por sección, más espacio negativo, y transiciones de color de fondo muy sutiles entre crema y blanco roto para marcar el paso de una etapa a otra.
-- Un solo CTA en toda la página: WhatsApp.
+- Un único objetivo de conversión: WhatsApp. Puede haber varios botones a lo largo de la página, pero todos con el mismo lenguaje ("Hablar por WhatsApp") y el mismo destino.
 
 ## Fotografías por sección
 
@@ -34,7 +34,7 @@ Todas subidas como assets CDN, sin filtros, con `alt` descriptivo y crops mobile
 5-7. **Yoga / Meditación / Masajes** — tres bloques de altura generosa, imagen y texto alternando lado. Kicker numerado, título, concepto en itálica, párrafo.
 8. **El espacio** — foto panorámica a sangre + "Un refugio diseñado para el silencio." y ubicación.
 9. **¿Qué necesitás hoy?** — tipográfica pura, tres líneas grandes (Moverte → Yoga, etc.) que anclan a su sección, y CTA "Hablar con Umbral".
-10. **Filosofía / testimonio** — cita serif grande sobre fondo crema, atribución sobria.
+10. **Filosofía** — sección editorial sobre la filosofía de Umbral: frase serif grande sobre fondo crema, sin testimonio ni atribución a ninguna persona. Funciona como pausa narrativa antes de la información práctica.
 11. **Ubicación y horarios** — dos columnas simples: dirección / horarios / WhatsApp.
 12. **CTA final** — "Hacé espacio para vos." + las cuatro líneas + botón.
 13. **Footer** — mínimo: logo, links, datos, año.
@@ -42,7 +42,7 @@ Todas subidas como assets CDN, sin filtros, con `alt` descriptivo y crops mobile
 ## Detalles técnicos
 
 - `src/routes/index.tsx` reemplaza el placeholder; secciones en `src/components/umbral/*` para mantenerlo legible.
-- Datos de contacto centralizados en `src/config/umbral.ts` (dirección, horarios, teléfono, mensaje de WhatsApp) — un solo lugar para editar. El link se arma como `wa.me` con el mensaje predefinido.
+- Datos de contacto centralizados en `src/config/umbral.ts` (dirección, horarios, teléfono, mensaje de WhatsApp) — un solo lugar para editar. Se muestra el número provisional `011-5555-5555`, y el enlace se arma en formato internacional argentino (`https://wa.me/5491155555555`) con el mensaje predefinido "Hola, Umbral. Quisiera conocer más sobre las experiencias y clases." codificado en la URL.
 - Tokens de color y tipografía en `src/styles.css` (@theme): blanco roto, crema, arena, beige, marrón suave, negro cálido en oklch. Serif editorial + sans limpia cargadas por `<link>` en `__root.tsx`.
 - Animaciones: un hook `useReveal` con IntersectionObserver → fade + 12px de subida, ~900ms, easing suave, respetando `prefers-reduced-motion`. Sin librerías nuevas.
 - SEO: title y meta description pedidos en el `head()` de la ruta index, og/twitter con la foto del hero, JSON-LD `LocalBusiness` con dirección y horarios, un solo H1.
