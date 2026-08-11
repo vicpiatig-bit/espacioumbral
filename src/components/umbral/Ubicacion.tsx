@@ -1,4 +1,4 @@
-import { umbral } from "@/config/umbral";
+import { umbral, CTA_LABELS } from "@/config/umbral";
 import { Reveal } from "./Reveal";
 import { WhatsappCta } from "./WhatsappCta";
 
@@ -44,7 +44,7 @@ export function Ubicacion() {
           <p className="mt-6 font-serif text-2xl text-foreground">
             {umbral.whatsappVisible}
           </p>
-          <WhatsappCta variant="outline" className="mt-8" />
+          <WhatsappCta variant="outline" className="mt-8" label={CTA_LABELS.ubicacion} />
         </Reveal>
       </div>
     </section>

@@ -6,12 +6,14 @@ export function QueEsUmbral() {
     <section id="experiencias" className="bg-background">
       <div className="mx-auto grid max-w-[1440px] gap-14 px-6 py-28 md:grid-cols-12 md:gap-16 md:px-12 md:py-40">
         <Reveal className="md:col-span-6 md:col-start-1">
-          <img
-            src={guiarAsset.url}
-            alt="Secuencia superpuesta de una mujer practicando yoga en un estudio con luz natural"
-            loading="lazy"
-            className="aspect-[4/5] w-full object-cover object-center"
-          />
+          <div className="photo-soft">
+            <img
+              src={guiarAsset.url}
+              alt="Secuencia superpuesta de una mujer practicando yoga en un estudio con luz natural"
+              loading="lazy"
+              className="aspect-[4/5] w-full object-cover object-center"
+            />
+          </div>
         </Reveal>
 
         <div className="flex flex-col justify-center md:col-span-5 md:col-start-8">

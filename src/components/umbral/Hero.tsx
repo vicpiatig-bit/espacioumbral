@@ -1,4 +1,5 @@
 import heroAsset from "@/assets/hero.png.asset.json";
+import { CTA_LABELS } from "@/config/umbral";
 import { Reveal } from "./Reveal";
 import { WhatsappCta } from "./WhatsappCta";
 
@@ -8,10 +9,12 @@ export function Hero() {
       <img
         src={heroAsset.url}
         alt="Sala vacía de Umbral con luz natural entrando por cortinas blancas sobre una pared beige"
-        className="absolute inset-0 h-full w-full object-cover object-[62%_center] md:object-center"
+        className="photo-fade-bottom absolute inset-0 h-full w-full object-cover object-[62%_center] md:object-center"
         fetchPriority="high"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/55 via-background/20 to-background/70 md:bg-gradient-to-r md:from-background/70 md:via-background/25 md:to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/18 via-55% to-background/75" />
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-background/72 via-background/28 via-45% to-transparent md:block" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
 
       <div className="relative mx-auto flex min-h-[92svh] max-w-[1440px] flex-col justify-end px-6 pb-20 pt-32 md:justify-center md:px-12 md:pb-28">
         <div className="max-w-[46rem]">
@@ -31,7 +34,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={560}>
-            <WhatsappCta className="mt-12" />
+            <WhatsappCta className="mt-12" label={CTA_LABELS.hero} />
           </Reveal>
         </div>
       </div>
