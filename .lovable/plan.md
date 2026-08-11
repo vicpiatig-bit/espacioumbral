@@ -1,37 +1,32 @@
-Mejorar la integración de la sección de ubicación
+Mejorar la integración del teléfono y el ícono de Instagram en el footer
 
 Objetivo
-Hacer que la sección de ubicación deje de sentirse como un bloque de texto aislado y pase a integrarse mejor con la narrativa visual y editorial del resto de la landing de Umbral.
+Que el número de WhatsApp y el ícono de Instagram en el footer se perciban como un bloque de contacto coherente, manteniendo el estilo minimalista de Umbral.
 
 Cambios propuestos
 
-1. Tratamiento visual de la sección
-   - Aplicar un fondo cálido sutil (por ejemplo, `bg-cream` o un tono arena muy claro) que la diferencie de la sección anterior y el `CtaFinal`.
-   - Aumentar el tamaño tipográfico de los títulos "Dónde estamos" y "Horarios" para que tengan más presencia y jerarquía, manteniendo el estilo de eyebrow.
+1. Agrupar el contacto
+   - Reorganizar la columna derecha del footer para que el número de WhatsApp y el ícono de Instagram formen una única unidad visual.
+   - Opción minimalista: disponer el ícono de Instagram alineado al lado del número de teléfono (misma línea), separados por un espacio generoso, en lugar de que el ícono quede debajo del número.
 
-2. Conexión con el espacio físico
-   - Incluir una imagen o una representación visual de la zona del estudio (por ejemplo, una foto del acceso o de la calle Fitz Roy) que se funda suavemente con el fondo cálido.
-   - Si no hay foto disponible del exterior, usar una imagen del interior ya aprobada (como `hero.png`) como fondo atmosférico con degradado para evitar cortes duros.
-   - Agregar un enlace sutil de "Cómo llegar" con la dirección completa vinculada a Google Maps, sin repetir el número de teléfono.
+2. Unificar tipografía y estados
+   - Aplicar la misma tipografía y color base al teléfono y al ícono.
+   - Mantener el hover sutil: el teléfono ya tiene un underline que se intensifica; el ícono puede usar el mismo color de foreground en hover.
+   - Asegurar un área táctil cómoda para el ícono (mantener los 40×40 px) y estados de foco visibles.
 
-3. Integración con la narrativa y el footer
-   - Ajustar el ritmo de transición entre `Filosofía`, `Ubicación`, `CtaFinal` y `Footer` para que la ubicación actúe como un puente hacia el contacto.
-   - Revisar que el footer conserve el número de WhatsApp y el ícono de Instagram, y que la sección de ubicación no los duplique.
-   - Alinear el espaciado y la escala tipográfica de la ubicación con la `Filosofía` y el `CtaFinal` para una progresión coherente.
+3. Espaciado y jerarquía
+   - Dejar un espacio claro entre el bloque de contacto y el copyright, para que cada pie de información respire.
+   - Alinear el bloque de contacto a la derecha en desktop y alineado al inicio en mobile, respetando la estructura actual del footer.
 
-4. Accesibilidad y conversión
-   - Mantener el contraste suficiente en los textos sobre el fondo cálido.
-   - Asegurar que los enlaces tengan estados de foco y hover visibles.
-   - No agregar nuevos campos de formulario ni funcionalidades de reserva.
+4. A11y y consistencia
+   - Conservar el `aria-label` descriptivo del enlace de Instagram.
+   - Verificar que el enlace de WhatsApp conserve el texto visible y el destino correcto.
 
 Archivos a modificar
-- `src/components/umbral/Ubicacion.tsx`
-- `src/components/umbral/Footer.tsx` (revisión de integración, sin duplicar datos)
-- `src/config/umbral.ts` (si se agrega enlace a Google Maps o nuevos datos de ubicación)
-- `src/styles.css` (si se agregan nuevas utilidades de fondo o degradados)
+- `src/components/umbral/Footer.tsx`
 
 Criterios de aceptación
-- La sección de ubicación se percibe como una continuación natural del recorrido visual, no como un apéndice informativo.
-- Los títulos tienen mayor jerarquía y la información está bien centrada y espaciada.
-- No se repite el teléfono de WhatsApp en la sección de ubicación (solo en el footer).
+- El teléfono y el ícono de Instagram se leen como un solo bloque de contacto.
+- El estilo sigue siendo minimalista: sin fondos adicionales, sin bordes nuevos, sin gradientes.
+- El layout funciona bien en desktop y mobile.
 - El build de la aplicación sigue funcionando correctamente.
