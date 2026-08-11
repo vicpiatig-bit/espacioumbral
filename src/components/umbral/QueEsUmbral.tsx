@@ -31,12 +31,12 @@ export function QueEsUmbral() {
               <p>
                 Entendemos el bienestar como algo integral: el cuerpo y la mente
                 no son dos cosas separadas, sino partes de una misma experiencia.
-                Por eso el yoga, la meditación y los masajes conviven acá bajo el
+                Por eso el yoga, la meditación y los masajes conviven bajo el
                 mismo techo.
               </p>
               <p>
                 Hay días en que el cuerpo necesita moverse. Otros en que la mente
-                pide silencio. Y otros en que lo único posible es soltar. Cada
+                pide silencio. Y otros en que lo único posible es soltar.&nbsp;Cada
                 práctica es una puerta distinta al mismo lugar.
               </p>
             </div>

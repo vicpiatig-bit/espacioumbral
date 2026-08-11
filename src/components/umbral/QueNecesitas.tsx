@@ -36,9 +36,9 @@ export function QueNecesitas() {
         </div>
 
         <Reveal delay={620}>
-          <p className="mx-auto mt-14 max-w-sm text-[0.95rem] leading-[1.9] text-muted-foreground">
-            No hay una única forma de empezar. Elegí lo que tu cuerpo y tu mente
-            necesitan hoy.
+          <p className="mx-auto mt-14 max-w-sm whitespace-pre-line text-[0.95rem] leading-[1.9] text-muted-foreground">
+            No hay una única forma de empezar.&nbsp;
+            {"\n"}Elegí lo que tu cuerpo y tu mente necesitan hoy.
           </p>
           <WhatsappCta variant="outline" className="mt-10" label={CTA_LABELS.caminos} />
         </Reveal>
