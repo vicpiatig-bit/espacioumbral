@@ -14,6 +14,9 @@ export const umbral = {
   // Formato internacional argentino, sin signos (54 9 11 ...)
   whatsappInternacional: "5491155555555",
   whatsappMensaje: "Hola, Umbral. Quisiera conocer más sobre las experiencias y clases.",
+  // Datos provisionales de Instagram
+  instagramUsuario: "@umbral.estudio",
+  instagramUrl: "https://instagram.com/umbral.estudio",
   horarios: [
     { dias: "Lunes a viernes", horas: "8:00 – 21:00" },
     { dias: "Sábados", horas: "9:00 – 14:00" },
@@ -31,6 +34,5 @@ export const CTA_LABELS = {
   header: "Hablar por WhatsApp",
   hero: "Empezá hoy",
   caminos: "Reservá tu lugar",
-  ubicacion: "Reservar práctica",
   final: "Hablar por WhatsApp",
 } as const;
