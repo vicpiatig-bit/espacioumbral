@@ -161,3 +161,52 @@
     }
   }
 }
+
+/* Tratamiento fotográfico: bordes suaves y tinte cálido, sin filtros duros */
+@utility photo-soft {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+
+  & img {
+    border-radius: inherit;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+    background:
+      radial-gradient(
+        120% 90% at 50% 45%,
+        transparent 55%,
+        color-mix(in oklab, var(--foreground) 12%, transparent) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--cream) 12%, transparent),
+        transparent 35%
+      );
+  }
+}
+
+@utility photo-fade-y {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 7%,
+    black 93%,
+    transparent 100%
+  );
+}
+
+@utility photo-fade-bottom {
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 82%,
+    transparent 100%
+  );
+}
