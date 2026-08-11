@@ -18,8 +18,7 @@ export function Pausa() {
           <Reveal delay={220}>
             <p className="mt-10 max-w-sm text-[0.95rem] leading-[1.9] text-muted-foreground">
               Umbral es una pausa dentro de la ciudad. Un rato en el que no hay
-              nada que resolver: solamente respirar, aflojar y volver a estar
-              donde estás.
+              nada que resolver: solamente respirar, aflojar y volver a vos.
             </p>
           </Reveal>
         </div>

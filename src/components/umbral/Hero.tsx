@@ -28,8 +28,8 @@ export function Hero() {
 
           <Reveal delay={340}>
             <p className="mt-8 max-w-md text-base leading-relaxed text-foreground/75 md:text-lg">
-              Un espacio para volver al cuerpo, aquietar la mente y encontrar tu
-              propio ritmo.
+              Un espacio para volver al cuerpo, aquietar la mente y dejarte
+              llevar.
             </p>
           </Reveal>
 
