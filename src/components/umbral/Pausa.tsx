@@ -25,12 +25,14 @@ export function Pausa() {
         </div>
 
         <Reveal delay={160} className="md:col-span-5 md:col-start-8">
-          <img
-            src={manifiestoAsset.url}
-            alt="Mujer caminando con calma por una sala de luz cálida, con leve desenfoque de movimiento"
-            loading="lazy"
-            className="aspect-[3/4] w-full object-cover object-center"
-          />
+          <div className="photo-soft">
+            <img
+              src={manifiestoAsset.url}
+              alt="Mujer caminando con calma por una sala de luz cálida, con leve desenfoque de movimiento"
+              loading="lazy"
+              className="aspect-[3/4] w-full object-cover object-center"
+            />
+          </div>
         </Reveal>
       </div>
     </section>

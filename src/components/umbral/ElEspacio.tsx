@@ -18,7 +18,7 @@ export function ElEspacio() {
           src={heroAsset.url}
           alt="Vista amplia del estudio Umbral: piso de madera, pared cálida y luz natural filtrada"
           loading="lazy"
-          className="h-[52vh] w-full object-cover object-[55%_70%] md:h-[76vh] md:object-[center_65%]"
+          className="photo-fade-y h-[52vh] w-full object-cover object-[55%_70%] md:h-[76vh] md:object-[center_65%]"
         />
       </Reveal>
 

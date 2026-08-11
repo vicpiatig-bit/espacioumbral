@@ -1,5 +1,6 @@
 import { Reveal } from "./Reveal";
 import { WhatsappCta } from "./WhatsappCta";
+import { CTA_LABELS } from "@/config/umbral";
 
 const caminos = [
   { accion: "Moverte", practica: "Yoga", href: "#yoga" },
@@ -39,7 +40,7 @@ export function QueNecesitas() {
             No hay una única forma de empezar. Elegí lo que tu cuerpo y tu mente
             necesitan hoy.
           </p>
-          <WhatsappCta variant="outline" className="mt-10" />
+          <WhatsappCta variant="outline" className="mt-10" label={CTA_LABELS.caminos} />
         </Reveal>
       </div>
     </section>

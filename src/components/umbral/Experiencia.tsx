@@ -36,12 +36,14 @@ export function Experiencia({
             invertida ? "md:col-start-7 md:order-2" : "md:col-start-1",
           )}
         >
-          <img
-            src={imagen}
-            alt={alt}
-            loading="lazy"
-            className="aspect-[4/5] w-full object-cover object-center md:aspect-[3/4]"
-          />
+          <div className="photo-soft">
+            <img
+              src={imagen}
+              alt={alt}
+              loading="lazy"
+              className="aspect-[4/5] w-full object-cover object-center md:aspect-[3/4]"
+            />
+          </div>
         </Reveal>
 
         <div

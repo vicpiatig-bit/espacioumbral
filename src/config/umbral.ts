@@ -17,7 +17,6 @@ export const umbral = {
   horarios: [
     { dias: "Lunes a viernes", horas: "8:00 – 21:00" },
     { dias: "Sábados", horas: "9:00 – 14:00" },
-    { dias: "Domingos", horas: "Cerrado" },
   ],
 } as const;
 
@@ -26,3 +25,12 @@ export const whatsappUrl = `https://wa.me/${umbral.whatsappInternacional}?text=$
 )}`;
 
 export const CTA_LABEL = "Hablar por WhatsApp";
+
+/** Etiquetas de los CTA. Todos llevan al mismo WhatsApp. */
+export const CTA_LABELS = {
+  header: "Hablar por WhatsApp",
+  hero: "Empezá hoy",
+  caminos: "Reservá tu lugar",
+  ubicacion: "Reservar práctica",
+  final: "Hablar por WhatsApp",
+} as const;
