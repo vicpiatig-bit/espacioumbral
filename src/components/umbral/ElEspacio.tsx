@@ -30,12 +30,6 @@ export function ElEspacio() {
             atmósfera pensada para que puedas llegar, respirar y simplemente
             estar.
           </p>
-          <p className="mt-8 text-[0.68rem] uppercase tracking-[0.24em] text-foreground/70">
-            {umbral.barrio}, {umbral.ciudad}
-            <span className="mt-2 block text-muted-foreground normal-case tracking-normal">
-              {umbral.direccionCompleta}
-            </span>
-          </p>
         </Reveal>
       </div>
     </section>

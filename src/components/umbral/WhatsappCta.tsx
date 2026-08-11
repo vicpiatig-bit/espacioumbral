@@ -27,7 +27,7 @@ export function WhatsappCta({
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "inline-flex min-h-12 items-center justify-center rounded-full px-9 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.22em] transition-all duration-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground",
+        "inline-flex min-h-12 items-center justify-center rounded-full px-9 py-4 text-[0.72rem] font-normal uppercase tracking-[0.22em] transition-all duration-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground",
         styles[variant],
         className,
       )}

@@ -62,7 +62,7 @@ export function Header() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden min-h-11 items-center rounded-full border border-foreground bg-foreground px-6 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-background shadow-[0_8px_22px_-14px_color-mix(in_oklab,var(--foreground)_60%,transparent)] transition-colors duration-500 hover:bg-foreground/90 md:inline-flex"
+            className="hidden min-h-11 items-center rounded-full border border-foreground bg-foreground px-6 text-[0.65rem] font-normal uppercase tracking-[0.2em] text-background shadow-[0_8px_22px_-14px_color-mix(in_oklab,var(--foreground)_60%,transparent)] transition-colors duration-500 hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground md:inline-flex"
           >
             {CTA_LABEL}
           </a>
@@ -113,7 +113,7 @@ export function Header() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => setOpen(false)}
-          className="mt-14 inline-flex min-h-13 w-fit items-center rounded-full bg-foreground px-8 py-4 text-[0.68rem] uppercase tracking-[0.2em] text-background"
+          className="mt-14 inline-flex min-h-13 w-fit items-center rounded-full border border-foreground bg-foreground px-8 py-4 text-[0.68rem] font-normal uppercase tracking-[0.2em] text-background"
         >
           {CTA_LABEL}
         </a>
