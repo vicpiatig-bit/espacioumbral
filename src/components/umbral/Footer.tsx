@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import { umbral, whatsappUrl } from "@/config/umbral";
 
 export function Footer() {
@@ -39,6 +40,15 @@ export function Footer() {
             className="text-[0.85rem] text-foreground underline decoration-foreground/25 underline-offset-[6px] transition-colors duration-500 hover:decoration-foreground/70"
           >
             {umbral.whatsappVisible}
+          </a>
+          <a
+            href={umbral.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Instagram de Umbral, ${umbral.instagramUsuario}`}
+            className="mt-5 inline-flex h-10 w-10 items-center justify-center rounded-full border border-foreground/25 text-foreground/80 transition-colors duration-500 hover:border-foreground hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
+          >
+            <Instagram size={18} strokeWidth={1.4} aria-hidden="true" />
           </a>
           <p className="mt-4 text-[0.72rem] text-muted-foreground">
             © {new Date().getFullYear()} Umbral

@@ -1,4 +1,3 @@
-import { Instagram } from "lucide-react";
 import { umbral } from "@/config/umbral";
 import { Reveal } from "./Reveal";
 
@@ -39,17 +38,6 @@ export function Ubicacion() {
           </Reveal>
         </div>
 
-        <Reveal delay={280} className="mt-16 flex justify-center">
-          <a
-            href={umbral.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Instagram de Umbral, ${umbral.instagramUsuario}`}
-            className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-foreground/25 text-foreground/80 transition-colors duration-500 hover:border-foreground hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground"
-          >
-            <Instagram size={20} strokeWidth={1.4} aria-hidden="true" />
-          </a>
-        </Reveal>
       </div>
     </section>
   );
