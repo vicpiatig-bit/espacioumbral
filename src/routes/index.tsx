@@ -102,6 +102,7 @@ function Index() {
         <QueNecesitas />
         <Filosofia />
         <Ubicacion />
+        <Contacto />
         <CtaFinal />
       </main>
       <Footer />
