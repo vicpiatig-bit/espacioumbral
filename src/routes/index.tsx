@@ -10,6 +10,7 @@ import { ElEspacio } from "@/components/umbral/ElEspacio";
 import { QueNecesitas } from "@/components/umbral/QueNecesitas";
 import { Filosofia } from "@/components/umbral/Filosofia";
 import { Ubicacion } from "@/components/umbral/Ubicacion";
+import { Contacto } from "@/components/umbral/Contacto";
 import { CtaFinal } from "@/components/umbral/CtaFinal";
 import { Footer } from "@/components/umbral/Footer";
 import yogaAsset from "@/assets/yoga.png.asset.json";
